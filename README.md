@@ -1,6 +1,6 @@
 # 🦾 Automatización de Pruebas API - restapiexample.com 🦾
 
-Este proyecto de automatizacion API hecho en Java-Gradle con Serenity-BDD/Rest-Asurred y Screenplay-pattern, 
+Este proyecto de automatizacion API hecho en Java-Gradle con Serenity-BDD/REST-Assured y Screenplay-pattern, 
 refleja los scripts de pruebas automatizadas sobre el catalogo de servicios API que se describe en 
 www.dummy.restapiexample.com
 
@@ -95,7 +95,7 @@ Para mas información, visite:
 | Proposito                  | Tecnologias  | Herramientas      |
 |----------------------------|--------------|-------------------|
 | BDD                        | Cucumber     | Gherkin           |      
-| Pruebas Automatizadas      | Rest-Asurred | Serenity-BDD      |
+| Pruebas Automatizadas      | REST-Assured | Serenity-BDD      |
 | Pruebas                    | JUnit        |                   |
 | Lenguaje de programación   | Java         | JDK/JRE           |
 | Gestor de dependencias     | Maven        | Gradle            |
