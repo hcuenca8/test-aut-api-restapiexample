@@ -1,8 +1,12 @@
-version: '1'
+pipeline {
+  agent { label 'master'}
 
-pipeline:
-  test:
-    systemProperties:
-      environment: 'pipeline'
-    steps:
-      sh "./gradlew clean test"
+    stages {
+
+      stage ('test') {
+        steps {
+          sh "./gradlew clean test"
+        }
+      }
+    }
+}
