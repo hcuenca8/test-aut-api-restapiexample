@@ -1,0 +1,8 @@
+version: '1'
+
+pipeline:
+  test:
+    systemProperties:
+      environment: 'pipeline'
+    steps:
+      sh "./gradlew clean test"

@@ -18,7 +18,10 @@ test.dependsOn(clearReports)
  * aggregate despues de test
  * crea el index.html para acceder al reporte, usando tarea aggregate del plugin serenity-gradle
  */
-test.finalizedBy(aggregate)
+if('pipeline'.equalsIgnoreCase(System.getProperty('environment')))
+{
+    test.finalizedBy(aggregate)
+}
 
 /**
  * generateFilmTicket despues de aggregate
