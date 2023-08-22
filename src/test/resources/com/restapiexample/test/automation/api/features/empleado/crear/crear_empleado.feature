@@ -20,6 +20,7 @@ Característica: Crear empleado
 
 
   @HP
+  @Regresion
   @CP-001 # Crear y consultar el nuevo empleado
   Escenario: Consultar empleado recien creado
       # R/ ¿Donde se encuentra el actor? --> ubicación / contexto
@@ -35,7 +36,6 @@ Característica: Crear empleado
 
 
   @HP
-  @Regresion
   @CP-002 # Crear empleado, exitosamente
   Escenario: Solicitar la creacion de empleado, correctamente
       # R/ ¿Donde se encuentra el actor? --> ubicación / contexto
