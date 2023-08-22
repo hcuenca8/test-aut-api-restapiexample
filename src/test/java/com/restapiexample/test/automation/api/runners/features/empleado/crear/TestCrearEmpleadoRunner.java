@@ -17,7 +17,7 @@ import org.junit.runner.RunWith;
     snippets = CucumberOptions.SnippetType.CAMELCASE,
     features = RunnerConstants.PACKAGE_FEATURES+"/empleado/crear/crear_empleado.feature",
     glue = {RunnerConstants.PACKAGE_STEP_DEFINITIONS,RunnerConstants.PACKAGE_SETUPS},
-    tags = "@CrearEmpleado and @Regresion",
+    tags = "@CrearEmpleado",
     dryRun = false //Desactive, despues de comprobar la existencia/relacion entre enunciado gherkin y StepDefinition
 )
 public class TestCrearEmpleadoRunner
