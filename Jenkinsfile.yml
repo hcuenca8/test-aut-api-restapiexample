@@ -6,7 +6,6 @@ pipeline {
 
       stage ('test') {
         steps {
-#          sh './gradlew clean test --tests "com.restapiexample.test.automation.api.runners.features.empleado.consultar.TestConsultarEmpleadoRunner"'
           sh './gradlew clean test -Denvironment=pipeline'
         }
       }
