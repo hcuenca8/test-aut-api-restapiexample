@@ -1,5 +1,7 @@
 pipeline {
 
+  agent { label 'trunk'}
+
     stages {
 
       stage ('test') {
