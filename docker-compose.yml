@@ -1,4 +1,9 @@
-#run: docker-compose up -d
+# shell IDE
+#   docker-compose up -d
+# url: localhost:8080
+#   initialAdminPassword
+#     shell container
+#       cat /var/jenkins_home/secrets/initialAdminPassword
 
 services:
   jenkins:
