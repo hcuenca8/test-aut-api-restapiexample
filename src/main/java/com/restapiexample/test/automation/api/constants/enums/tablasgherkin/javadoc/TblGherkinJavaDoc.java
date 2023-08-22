@@ -1,6 +1,7 @@
 package com.restapiexample.test.automation.api.constants.enums.tablasgherkin.javadoc;
 
 import com.restapiexample.test.automation.api.constants.enums.tablasgherkin.TablasGherkin;
+import com.restapiexample.test.automation.api.models.params.javadoc.ParamsJavaDoc;
 import com.restapiexample.test.automation.api.utils.GeneralUtil;
 
 /**
@@ -9,16 +10,18 @@ import com.restapiexample.test.automation.api.utils.GeneralUtil;
 public class TblGherkinJavaDoc {
 
     /**
-     * TODO
-     * NO OLVIDE REGISTRAR LA TABLA GHERKIN EN EL LISTADO DE TABLAS GHERKIN
+     * Clase que describe la configuracion de una tabla gherkin (tabla de parametros, en los enunciados gherkin),
+     * NO OLVIDE REGISTRAR ESTA CLASE EN EL LISTADO DE TABLAS GHERKIN, PARA HABILITAR SU USO
      * @see TablasGherkin
      */
     public static final String CLASE = null;
 
     /**
-     * TODO descripcion metodo crear screen
+     * Metodo que utiliza la configuracion de la tabla gherkin descrita, para crear el objeto de parametros (params)
+     * respectivo a esta tabla
+     * @see ParamsJavaDoc#CREAR_PARAMS
      */
-    public static final String CREAR_SCREEN = null;
+    public static final String CREAR_PARAMS = null;
 
     private TblGherkinJavaDoc()
     {

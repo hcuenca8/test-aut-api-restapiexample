@@ -32,11 +32,6 @@ public class Camerino extends Cast {
         this.abilityProviders = new ArrayList<>();
     }
 
-    private Camerino(Consumer<Actor>... providers) {
-        this.standardAbilities = new ArrayList<>();
-        this.abilityProviders = asList(providers);
-    }
-
     @Override
     public Actor actorNamed(String actorName, Ability... abilities) {
 
@@ -99,10 +94,10 @@ public class Camerino extends Cast {
     {
         Map<String, Actor> hmActors = Camerino.delElenco().getHmActors();
 
-        if  (   !hmActors.containsKey(enSuPapel)  )
-        {
-            hmActors.put(enSuPapel,protagonico);
-        }
+        hmActors.computeIfAbsent(enSuPapel, k -> protagonico);
+
+        //if !hmActors.containsKey(enSuPapel)
+        //  hmActors.put(enSuPapel,protagonico)
 
         return Camerino.delElenco();
     }

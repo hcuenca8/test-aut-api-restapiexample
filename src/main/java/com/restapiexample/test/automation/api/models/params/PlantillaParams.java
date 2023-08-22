@@ -1,6 +1,7 @@
 package com.restapiexample.test.automation.api.models.params;
 
 import com.restapiexample.test.automation.api.models.params.javadoc.ParamsJavaDoc;
+import com.restapiexample.test.automation.api.utils.models.params.interfaces.IParam;
 import lombok.Builder;
 import lombok.Data;
 
@@ -11,7 +12,7 @@ import lombok.Data;
  */
 @Builder
 @Data
-public class PlantillaParams
+public class PlantillaParams implements IParam
 {
 
     private String parametro1;

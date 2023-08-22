@@ -3,6 +3,7 @@ package com.restapiexample.test.automation.api.models.params.features.empleado.c
 import com.restapiexample.test.automation.api.models.dtos.data.DataEmpleado;
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.crear.CrearEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.params.javadoc.ParamsJavaDoc;
+import com.restapiexample.test.automation.api.utils.models.params.interfaces.IParam;
 import lombok.Builder;
 import lombok.Data;
 
@@ -13,7 +14,7 @@ import lombok.Data;
  */
 @Builder
 @Data
-public class CrearEmpleadoParams
+public class CrearEmpleadoParams implements IParam
 {
 
     private CrearEmpleadoRequest request;

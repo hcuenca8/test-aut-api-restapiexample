@@ -7,6 +7,7 @@ import com.restapiexample.test.automation.api.constants.enums.tablasgherkin.feat
 import com.restapiexample.test.automation.api.constants.enums.tablasgherkin.features.empleado.retiro.RetirarEmpleadoTblGherkin;
 import com.restapiexample.test.automation.api.constants.enums.tablasgherkin.general.api.RespuestaPeticionTblGherkin;
 import com.restapiexample.test.automation.api.utils.gherkin.tabla.interfaces.ITablaGherkin;
+import com.restapiexample.test.automation.api.utils.models.params.interfaces.IParam;
 
 public enum TablasGherkin
 {
@@ -17,14 +18,14 @@ public enum TablasGherkin
     RESPUESTA_PETICION(RespuestaPeticionTblGherkin.values()),
     ;
 
-    private final ITablaGherkin<?>[] tablaGherkin;
+    private final ITablaGherkin<? extends IParam>[] tablaGherkin;
 
-    TablasGherkin(ITablaGherkin<?>[] tablaGherkin)
+    TablasGherkin(ITablaGherkin<? extends IParam>[] tablaGherkin)
     {
         this.tablaGherkin = tablaGherkin;
     }
 
-    public ITablaGherkin<?>[] getTablaGherkin() {
+    public ITablaGherkin<? extends IParam>[] getTablaGherkin() {
         return tablaGherkin;
     }
 }

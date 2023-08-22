@@ -36,13 +36,6 @@ public class CorrespondeAlEmpleado implements Question<Boolean>
 
         DataEmpleadoExistente dataConsulta = this.parametrosConsulta.getRequest().getResponse().getBody().getData();
 
-//        dataConsulta = DataConsultaEmpleado.builder()
-//            .id(dataEmpleado.getId())
-//            .edad(dataEmpleado.getEdad())
-//            .nombre(dataEmpleado.getNombre())
-//            .salario(dataEmpleado.getSalario())
-//            .build();
-
         return new ReflectionToStringBuilder(
                     this.dataEsperada==null? StringUtils.EMPTY:this.dataEsperada,JSON_STYLE
                 ).toString().equals(

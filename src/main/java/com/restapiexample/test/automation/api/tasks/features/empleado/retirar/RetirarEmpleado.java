@@ -1,5 +1,6 @@
 package com.restapiexample.test.automation.api.tasks.features.empleado.retirar;
 
+import com.restapiexample.test.automation.api.constants.enums.configuracion.serenity.SerenityConf;
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.retirar.RetirarEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.dtos.responses.empleado.retirar.RetirarEmpleadoResponse;
 import com.restapiexample.test.automation.api.models.params.features.empleado.retirar.RetirarEmpleadoParams;
@@ -20,7 +21,8 @@ public class RetirarEmpleado extends SolicitarOperacion<RetirarEmpleadoResponse,
 {
     private RetirarEmpleadoParams parametros;
 
-    private final String PATH = "/v1/delete";
+    //"/v1/delete"
+    private static final String PATH = SerenityConf.PATH_DEL_DELETE.getValor();
 
     @Override
     protected RetirarEmpleadoRequest getRequest() {

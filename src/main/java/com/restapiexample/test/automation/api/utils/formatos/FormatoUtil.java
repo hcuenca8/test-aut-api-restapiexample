@@ -63,7 +63,6 @@ public class FormatoUtil
 
             do {
                 /**
-                 * TODO
                  * probar utilizando RandomStringUtils.randomNumeric
                  */
                 int totalNum = StringUtils.countMatches(matcher.group(1),id);
@@ -85,7 +84,7 @@ public class FormatoUtil
 
     private static String reemplazarPorFecha(String texto)
     {
-        String patron = "\\{((d|M|y|H|h|m|s)+)\\}";
+        String patron = "\\{([dMyHhms]+)\\}";
 
         Matcher matcher = Pattern.compile(patron).matcher(texto);
 
@@ -103,13 +102,13 @@ public class FormatoUtil
             String segundoFecha = StringUtils.leftPad(String.valueOf(fecha.get(Calendar.SECOND)),2,"0");
 
             do{
-                texto = FormatoUtil.reemplazarPorItemFecha(matcher.group(1),"d",2d,diaFecha);
-                texto = FormatoUtil.reemplazarPorItemFecha(texto,"M",2d,mesFecha);
-                texto = FormatoUtil.reemplazarPorItemFecha(texto,"y",4d,anyoFecha);
-                texto = FormatoUtil.reemplazarPorItemFecha(texto,"H",2d,hora24Fecha);
-                texto = FormatoUtil.reemplazarPorItemFecha(texto,"h",2d,hora12Fecha);
-                texto = FormatoUtil.reemplazarPorItemFecha(texto,"m",2d,minutoFecha);
-                texto = FormatoUtil.reemplazarPorItemFecha(texto,"s",2d,segundoFecha);
+                texto = FormatoUtil.reemplazarPorItemFecha(matcher.group(1),"d",diaFecha);
+                texto = FormatoUtil.reemplazarPorItemFecha(texto,"M",mesFecha);
+                texto = FormatoUtil.reemplazarPorItemFecha(texto,"y",anyoFecha);
+                texto = FormatoUtil.reemplazarPorItemFecha(texto,"H",hora24Fecha);
+                texto = FormatoUtil.reemplazarPorItemFecha(texto,"h",hora12Fecha);
+                texto = FormatoUtil.reemplazarPorItemFecha(texto,"m",minutoFecha);
+                texto = FormatoUtil.reemplazarPorItemFecha(texto,"s",segundoFecha);
 
                 matcher.appendReplacement(resultado,texto);
             }while  ( matcher.find()  );
@@ -121,7 +120,7 @@ public class FormatoUtil
         }
     }
 
-    private static String reemplazarPorItemFecha(String texto, String id, double digitos, String valorItemFecha)
+    private static String reemplazarPorItemFecha(String texto, String id, String valorItemFecha)
     {
         StringBuffer resultado = new StringBuffer();
         Matcher matcher = Pattern.compile("("+id+"+)").matcher(texto);

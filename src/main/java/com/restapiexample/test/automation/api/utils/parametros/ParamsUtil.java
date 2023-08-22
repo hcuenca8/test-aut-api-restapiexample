@@ -13,7 +13,7 @@ public class ParamsUtil
 {
     public static final String ID_INICIAL = "{";
     public static final String ID_FINAL = "}";
-    public static final String RGX_FORMATO = "\\"+ID_INICIAL+"[0-9]+\\"+ID_FINAL;
+    public static final String RGX_FORMATO = "\\"+ID_INICIAL+"\\d+\\"+ID_FINAL;//[0-9]
 
     public static final Pattern PAT_RGX_FORMATO = Pattern.compile(RGX_FORMATO);
 

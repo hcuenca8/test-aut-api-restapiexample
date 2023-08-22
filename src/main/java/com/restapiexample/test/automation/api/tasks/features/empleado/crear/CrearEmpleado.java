@@ -1,5 +1,6 @@
 package com.restapiexample.test.automation.api.tasks.features.empleado.crear;
 
+import com.restapiexample.test.automation.api.constants.enums.configuracion.serenity.SerenityConf;
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.crear.CrearEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.dtos.responses.empleado.crear.CrearEmpleadoResponse;
 import com.restapiexample.test.automation.api.models.params.features.empleado.crear.CrearEmpleadoParams;
@@ -20,7 +21,8 @@ public class CrearEmpleado extends SolicitarOperacion<CrearEmpleadoResponse, Cre
 {
     private CrearEmpleadoParams parametros;
 
-    private final String PATH = "/v1/create";
+    //"/v1/create"
+    private static final String PATH = SerenityConf.PATH_PST_CREATE.getValor();
 
     @Override
     protected CrearEmpleadoRequest getRequest() {

@@ -20,8 +20,7 @@ import org.junit.runner.RunWith;
         tags = "@Todos",
         dryRun = false
 )
-public class
-TestTodosRunner
+public class TestTodosRunner
 {
     /**
      * Para mas informacion:

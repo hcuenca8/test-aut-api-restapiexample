@@ -1,5 +1,6 @@
 package com.restapiexample.test.automation.api.tasks.features.empleado.editar;
 
+import com.restapiexample.test.automation.api.constants.enums.configuracion.serenity.SerenityConf;
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.editar.EditarEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.dtos.responses.empleado.editar.EditarEmpleadoResponse;
 import com.restapiexample.test.automation.api.models.params.features.empleado.editar.EditarEmpleadoParams;
@@ -20,7 +21,8 @@ public class EditarEmpleado extends SolicitarOperacion<EditarEmpleadoResponse, E
 {
     private EditarEmpleadoParams parametros;
 
-    private final String PATH = "/v1/update";
+    //"/v1/update"
+    private static final String PATH = SerenityConf.PATH_PUT_UPDATE.getValor();
 
     @Override
     protected EditarEmpleadoRequest getRequest() {

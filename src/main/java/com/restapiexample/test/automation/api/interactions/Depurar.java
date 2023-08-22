@@ -17,7 +17,6 @@ public class Depurar implements Interaction {
         TrazaUtil.informacion(this.mensaje);
         if(this.breakPoint){
             this.breakPoint = !this.breakPoint;
-
         }
     }
 

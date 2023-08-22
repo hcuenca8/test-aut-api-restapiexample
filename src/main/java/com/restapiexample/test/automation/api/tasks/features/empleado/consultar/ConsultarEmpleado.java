@@ -1,5 +1,6 @@
 package com.restapiexample.test.automation.api.tasks.features.empleado.consultar;
 
+import com.restapiexample.test.automation.api.constants.enums.configuracion.serenity.SerenityConf;
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.consultar.ConsultarEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.dtos.responses.empleado.consultar.ConsultarEmpleadoResponse;
 import com.restapiexample.test.automation.api.models.params.features.empleado.consultar.ConsultarEmpleadoParams;
@@ -20,7 +21,8 @@ public class ConsultarEmpleado extends SolicitarOperacion<ConsultarEmpleadoRespo
 {
     private ConsultarEmpleadoParams parametros;
 
-    private final String PATH = "/v1/employee";
+    //"/v1/employee"
+    private static final String PATH = SerenityConf.PATH_GET_EMPLOYEE.getValor();
 
     @Override
     protected ConsultarEmpleadoRequest getRequest() {
@@ -30,7 +32,7 @@ public class ConsultarEmpleado extends SolicitarOperacion<ConsultarEmpleadoRespo
     @Override
     protected <T extends Actor> void execute(T actor) {
         actor.attemptsTo(
-            Get.resource(PATH+"/"+this.parametros.getRequest().getId())
+            Get.resource(PATH +"/"+this.parametros.getRequest().getId())
         );
     }
 

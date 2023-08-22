@@ -1,5 +1,6 @@
 package com.restapiexample.test.automation.api.tasks.features.empleado.consultar;
 
+import com.restapiexample.test.automation.api.constants.enums.configuracion.serenity.SerenityConf;
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.consultar.ConsultarEmpleadosRequest;
 import com.restapiexample.test.automation.api.models.dtos.responses.empleado.consultar.ConsultarEmpleadosResponse;
 import com.restapiexample.test.automation.api.models.params.features.empleado.consultar.ConsultarEmpleadosParams;
@@ -22,7 +23,8 @@ public class ConsultarEmpleados extends SolicitarOperacion<ConsultarEmpleadosRes
 {
     private ConsultarEmpleadosParams parametros;
 
-    private final String PATH = "/v1/employees";
+    //"/v1/employees"
+    private static final String PATH = SerenityConf.PATH_GET_EMPLOYEES.getValor();
 
     @Override
     protected ConsultarEmpleadosRequest getRequest()

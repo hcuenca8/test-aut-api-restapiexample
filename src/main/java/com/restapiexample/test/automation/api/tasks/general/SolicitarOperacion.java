@@ -25,7 +25,7 @@ public abstract class SolicitarOperacion<V extends IResponse,K extends IRequest<
     protected abstract <T extends Actor> void execute(T actor);
 
     protected <T extends Actor> void finish(T actor){
-        return;
+        actor.attemptsTo();
     }
 
     /**

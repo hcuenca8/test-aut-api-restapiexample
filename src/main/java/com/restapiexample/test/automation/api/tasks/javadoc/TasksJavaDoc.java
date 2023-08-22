@@ -32,10 +32,10 @@ public class TasksJavaDoc {
     public static final String ENLACE = null;
 
     /**
-     * <li/> datosPantalla: Habilitar parametro, en caso que la tarea requiera de un insumo de parametros para llevar a
+     * <li/> parametros: Habilitar parametro, en caso que la tarea requiera de un insumo de parametros para llevar a
      *                      cabo su objetivo, estos parametros normalmente son enrutados desde el StepDefinition a traves
-     *                      del libreto, y se encapsulan dentro de un objeto de concepto 'Screen' (Parametros de Pantalla),
-     * @see ParamsJavaDoc#CLASE TODO CONCEPTO PARAMS
+     *                      del libreto, y se encapsulan dentro de un objeto de concepto 'Params' (Parametros),
+     * @see ParamsJavaDoc#CLASE
      */
     public static final String PARAMETRO_PARAMS = null;
 
