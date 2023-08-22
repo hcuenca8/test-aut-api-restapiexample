@@ -32,7 +32,7 @@ public class TrazaUtil
 
     public static final String IDENTACION = "\n\t\t";
 
-    public static final String RGX_TERMINA_SALTO_O_TAB = "(\\n|\\t)+$";
+    public static final String RGX_TERMINA_SALTO_O_TAB = "[\\n\\t]+$"; //"(\\n|\\t)+$"
 
     /**
      * Para mas informacion:
