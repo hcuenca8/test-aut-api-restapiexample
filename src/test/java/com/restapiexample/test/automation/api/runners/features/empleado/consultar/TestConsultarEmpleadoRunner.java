@@ -1,4 +1,4 @@
-package com.restapiexample.test.automation.api.runners.features.empleado.consulta;
+package com.restapiexample.test.automation.api.runners.features.empleado.consultar;
 
 import com.restapiexample.test.automation.api.runners.RunnerConstants;
 import com.restapiexample.test.automation.api.runners.javadoc.RunnersJavaDoc;
@@ -15,18 +15,18 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
     snippets = CucumberOptions.SnippetType.CAMELCASE,
-    features = RunnerConstants.PACKAGE_FEATURES+"/empleado/consultar/consultar_empleados.feature",
+    features = RunnerConstants.PACKAGE_FEATURES+"/empleado/consultar/consultar_empleado.feature",
     glue = {RunnerConstants.PACKAGE_STEP_DEFINITIONS,RunnerConstants.PACKAGE_SETUPS},
-    tags = "@ConsultarEmpleados",
+    tags = "@ConsultarEmpleado",
     dryRun = false //Desactive, despues de comprobar la existencia/relacion entre enunciado gherkin y StepDefinition
 )
-public class TestConsultarEmpleadosRunner
+public class TestConsultarEmpleadoRunner
 {
     /**
      * Para mas informacion:
      * @see RunnersJavaDoc#CONSTRUCTOR
      */
-    private TestConsultarEmpleadosRunner()
+    private TestConsultarEmpleadoRunner()
     {
         GeneralUtil.noPermitaInstanciar();
     }

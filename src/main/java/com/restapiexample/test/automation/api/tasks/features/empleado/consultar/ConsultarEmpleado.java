@@ -43,36 +43,6 @@ public class ConsultarEmpleado extends SolicitarOperacion<ConsultarEmpleadoRespo
 
     /**
      * Para mas informacion:
-     * @see TasksJavaDoc#PERFORM_AS
-     */
-//    @Override
-//    public <T extends Actor> void performAs(T actor)
-//    {
-//        /**
-//         * Para mas informacion:
-//         * @see TasksJavaDoc#ENLAZAR_ACCIONES
-//         */
-//
-//        do{
-//            actor.attemptsTo(
-//                Get.resource(PATH+"/"+this.parametros.getRequest().getId())
-//            );
-//
-//        }while(PeticionUtil.esperaXReintento(actor)); //Too Many Requests
-//
-//        this.parametros.getRequest().setResponse(
-//            GeneralResponse.<ConsultarEmpleadoResponse>builder()
-//                .body(JSONUtils.pasarAObjeto(
-//                        SerenityRest.lastResponse().getBody().prettyPrint(),
-//                        ConsultarEmpleadoResponse.class
-//                    )
-//                ).codigo(SerenityRest.lastResponse().statusCode())
-//                .build()
-//        );
-//    }
-
-    /**
-     * Para mas informacion:
      * @see TasksJavaDoc#ENLACE
      */
     public static ConsultarEmpleado enElSistema(String id)

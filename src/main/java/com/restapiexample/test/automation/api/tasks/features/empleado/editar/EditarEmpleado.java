@@ -54,43 +54,6 @@ public class EditarEmpleado extends SolicitarOperacion<EditarEmpleadoResponse, E
 
     /**
      * Para mas informacion:
-     * @see TasksJavaDoc#PERFORM_AS
-     */
-//    @Override
-//    public <T extends Actor> void performAs(T actor)
-//    {
-//        /**
-//         * Para mas informacion:
-//         * @see TasksJavaDoc#ENLAZAR_ACCIONES
-//         */
-//
-//        do{
-//            actor.attemptsTo(
-//                Put.to(PATH+"/"+this.parametros.getRequest().getId()).with(
-//                    req  ->
-//                        //req.header("Content-Type", "application/json")
-//                        req.body(JSONUtils.pasarAJson(this.parametros.getRequest().getBody()))
-//                )
-//            );
-//
-//        }while(PeticionUtil.esperaXReintento(actor)); //Too Many Requests
-//
-//        this.parametros.getRequest().setResponse(
-//            GeneralResponse.<EditarEmpleadoResponse>builder()
-//                .body(JSONUtils.pasarAObjeto(
-//                        SerenityRest.lastResponse().getBody().prettyPrint(),
-//                        EditarEmpleadoResponse.class
-//                    )
-//                ).codigo(SerenityRest.lastResponse().statusCode())
-//                .build()
-//        );
-//
-//        this.parametros.getRequest().getResponse().getBody().getData()
-//            .setId(this.parametros.getRequest().getId());
-//    }
-
-    /**
-     * Para mas informacion:
      * @see TasksJavaDoc#ENLACE
      */
     public static EditarEmpleado enElSistema(EditarEmpleadoParams parametros)

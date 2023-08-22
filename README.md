@@ -77,8 +77,6 @@ Para mas información, visite:
 >Clases que describen las actividades que el actor realizara sobre el sistema al interpretar un caso de prueba.
 ### 📁 questions: [./src/main/java/.../]
 >Clases que evaluaran el comportamiento debido o esperado, posterior a las actividades de un actor en un caso de prueba,a traves de validaciones y/o verificaciones
-### 📁 userinterfaces: [./src/main/java/.../]
->Clases que representan la vista de usuario (pantalla/formulario), que contienen los elementos con los que interactuara directa o indirectamente el actor durante el caso de prueba.
 ### 📁 interactions: [./src/main/java/.../]
 >Clases que contienen las actividades o conjunto de acciones, de bajo nivel que requiere el actor para interactuar con el sistema.
 ### 📁 models: [./src/main/java/.../]
@@ -94,18 +92,16 @@ Para mas información, visite:
 
 ## 🛠️ Tecnologias / Herramientas [📚](#menu) 
 
-| Proposito                  | Tecnologias | Herramientas      |
-|----------------------------|-------------|-------------------|
-| BDD                        | Cucumber    | Gherkin           |      
-| Pruebas Automatizadas      | Selenium    | Serenity-BDD      |
-| Interprete Automatizacion  | Driver      | chrome-driver     |
-| Pruebas                    | JUnit       |                   |
-| Lenguaje de programación   | Java        | JDK/JRE           |
-| Gestor de dependencias     | Maven       | Gradle            |
-| Versionamiento             | Git         | GitHub, GUI/Bash  |
-| Calidad de codigo          | Sonar       | SonarLint         |
-| IDE                        |             | IntelliJ IDEA     |
-| Localizadores              | DOM, xpath, CSS selectors | dev tools browser |
+| Proposito                  | Tecnologias  | Herramientas      |
+|----------------------------|--------------|-------------------|
+| BDD                        | Cucumber     | Gherkin           |      
+| Pruebas Automatizadas      | Rest-Asurred | Serenity-BDD      |
+| Pruebas                    | JUnit        |                   |
+| Lenguaje de programación   | Java         | JDK/JRE           |
+| Gestor de dependencias     | Maven        | Gradle            |
+| Versionamiento             | Git          | GitHub, GUI/Bash  |
+| Calidad de codigo          | Sonar        | SonarLint         |
+| IDE                        |              | IntelliJ IDEA     |
 
 
 <br>
@@ -132,11 +128,11 @@ Para mas información, visite:
 1. Clonar/descargar proyecto
 * Via HTTPS:
 ```
-git clone https://github.com/hcuenca8/test-aut-e2e-saucedemo.git
+git clone https://github.com/hcuenca8/test-aut-api-restapiexample.git
 ```
 * Via SSH:
 ```
-git clone git@github.com:hcuenca8/test-aut-e2e-saucedemo.git
+git clone git@github.com:hcuenca8/test-aut-api-restapiexample.git
 ```
 2. Abrir proyecto en IDE (IntelliJ o de su preferencia)
 3. Gestionar dependencias con gradle
@@ -157,33 +153,38 @@ git clone git@github.com:hcuenca8/test-aut-e2e-saucedemo.git
 **Desde shell / terminal dentro del proyecto**
 * **De todos los test**
 ```
-./gradlew clean test --tests "TestTodosRunner"
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.general.TestTodosRunner"
 ```
 
 * **De un test particular**
 ```
-./gradlew clean test --tests "TestMenuPortalRunner"
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.features.empleado.crear.TestCrearEmpleadoRunner"
 ```
 ```
-./gradlew clean test --tests "TestCatalogoProductosRunner"
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.features.empleado.editar.TestEditarEmpleadoRunner"
 ```
-👉🏼 **Aqui, el runner mas completo, y que solicita el ejercicio:**
 ```
-./gradlew clean test --tests "TestCarritoCompraRunner"
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.features.empleado.retirar.TestRetirarEmpleadoRunner"
+```
+```
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.features.empleado.consultar.TestConsultarEmpleadoRunner"
+```
+```
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.features.empleado.consultar.TestConsultarEmpleadosRunner"
 ```
 
 * **De un grupo de test**
 ``` 
-./gradlew clean test --tests "TestRegresionRunner"
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.general.TestRegresionRunner"
 ```
 ``` 
-./gradlew clean test --tests "TestHPRunner"
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.general.TestHPRunner"
 ```
 ``` 
-./gradlew clean test --tests "TestAPRunner"
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.general.TestAPRunner"
 ```
 ``` 
-./gradlew clean test --tests "TestSmokeRunner"
+./gradlew clean test --tests "com.restapiexample.test.automation.api.runners.general.TestSmokeRunner"
 ```
 
 **Desde IDE**
@@ -193,14 +194,19 @@ TestTodosRunner
 ```
 * **De un test particular**
 ```
-TestMenuPortalRunner
+TestCrearEmpleadoRunner
 ```
 ```
-TestCatalogoProductosRunner
+TestEditarEmpleadoRunner
 ```
-👉🏼 **Aqui, el runner mas completo, y que solicita el ejercicio:**
 ```
-TestCarritoCompraRunner
+TestRetirarEmpleadoRunner
+```
+```
+TestConsultarEmpleadoRunner
+```
+```
+TestConsultarEmpleadosRunner
 ```
 
 * **De un grupo de test estandar**
@@ -243,7 +249,7 @@ Un ejemplo acerca de la visualizacion y navegacion del reporte, se puede observa
 	
 * Publico
     + Ambiente 
-      + 📦 https://www.exito.com/
+      + 📦 https://dummy.restapiexample.com/api
 
 <br>
 

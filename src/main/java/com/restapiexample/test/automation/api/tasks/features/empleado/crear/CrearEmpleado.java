@@ -46,40 +46,6 @@ public class CrearEmpleado extends SolicitarOperacion<CrearEmpleadoResponse, Cre
 
     /**
      * Para mas informacion:
-     * @see TasksJavaDoc#PERFORM_AS
-     */
-//    @Override
-//    public <T extends Actor> void performAs(T actor)
-//    {
-//        /**
-//         * Para mas informacion:
-//         * @see TasksJavaDoc#ENLAZAR_ACCIONES
-//         */
-//
-//        do{
-//            actor.attemptsTo(
-//                Post.to(PATH).with(
-//                    req  ->
-//                        //req.header("Content-Type", "application/json")
-//                        req.body(JSONUtils.pasarAJson(this.parametros.getRequest().getBody()))
-//                )
-//            );
-//
-//        }while(PeticionUtil.esperaXReintento(actor)); //Too Many Requests
-//
-//        this.parametros.getRequest().setResponse(
-//            GeneralResponse.<CrearEmpleadoResponse>builder()
-//                .body(JSONUtils.pasarAObjeto(
-//                        SerenityRest.lastResponse().getBody().prettyPrint(),
-//                        CrearEmpleadoResponse.class
-//                    )
-//                ).codigo(SerenityRest.lastResponse().statusCode())
-//                .build()
-//        );
-//    }
-
-    /**
-     * Para mas informacion:
      * @see TasksJavaDoc#ENLACE
      */
     public static CrearEmpleado enElSistema(CrearEmpleadoParams parametros)

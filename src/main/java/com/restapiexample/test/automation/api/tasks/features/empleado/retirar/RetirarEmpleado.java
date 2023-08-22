@@ -45,36 +45,6 @@ public class RetirarEmpleado extends SolicitarOperacion<RetirarEmpleadoResponse,
 
     /**
      * Para mas informacion:
-     * @see TasksJavaDoc#PERFORM_AS
-     */
-//    @Override
-//    public <T extends Actor> void performAs(T actor)
-//    {
-//        /**
-//         * Para mas informacion:
-//         * @see TasksJavaDoc#ENLAZAR_ACCIONES
-//         */
-//
-//        do{
-//            actor.attemptsTo(
-//                Delete.from(PATH+"/"+this.parametros.getRequest().getId())
-//            );
-//
-//        }while(PeticionUtil.esperaXReintento(actor)); //Too Many Requests
-//
-//        this.parametros.getRequest().setResponse(
-//            GeneralResponse.<RetirarEmpleadoResponse>builder()
-//                .body(JSONUtils.pasarAObjeto(
-//                        SerenityRest.lastResponse().getBody().prettyPrint(),
-//                        RetirarEmpleadoResponse.class
-//                    )
-//                ).codigo(SerenityRest.lastResponse().statusCode())
-//                .build()
-//        );
-//    }
-
-    /**
-     * Para mas informacion:
      * @see TasksJavaDoc#ENLACE
      */
     public static RetirarEmpleado delSistema(String id)
