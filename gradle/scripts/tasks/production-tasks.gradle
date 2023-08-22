@@ -17,12 +17,12 @@ test {
     testLogging.showStandardStreams = true
 
     //-Denvironment se resuelve como "pipeline" desde el pipeline de jenkins a traves de Jenkinsfile.yml
-    if('pipeline'.equalsIgnoreCase(vEnvironment))
-    {
-        //https://docs.gradle.org/current/javadoc/org/gradle/api/tasks/testing/TestFilter.html
-        filter {
-            //para las pruebas unicamente se ejecutaran los runners incluidos dentro de este contexto
-            includeTestsMatching "*.runners.pipeline.*"
-        }
-    }
+//    if('pipeline'.equalsIgnoreCase(vEnvironment))
+//    {
+//        //https://docs.gradle.org/current/javadoc/org/gradle/api/tasks/testing/TestFilter.html
+//        filter {
+//            //para las pruebas unicamente se ejecutaran los runners incluidos dentro de este contexto
+//            includeTestsMatching "*.runners.pipeline.*"
+//        }
+//    }
 }
