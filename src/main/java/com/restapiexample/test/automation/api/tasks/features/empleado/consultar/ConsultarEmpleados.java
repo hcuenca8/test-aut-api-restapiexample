@@ -1,10 +1,7 @@
 package com.restapiexample.test.automation.api.tasks.features.empleado.consultar;
 
-import com.restapiexample.test.automation.api.models.dtos.requests.empleado.consultar.ConsultarEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.consultar.ConsultarEmpleadosRequest;
-import com.restapiexample.test.automation.api.models.dtos.responses.empleado.consultar.ConsultarEmpleadoResponse;
 import com.restapiexample.test.automation.api.models.dtos.responses.empleado.consultar.ConsultarEmpleadosResponse;
-import com.restapiexample.test.automation.api.models.params.features.empleado.consultar.ConsultarEmpleadoParams;
 import com.restapiexample.test.automation.api.models.params.features.empleado.consultar.ConsultarEmpleadosParams;
 import com.restapiexample.test.automation.api.models.scena.screenplay.Protagonista;
 import com.restapiexample.test.automation.api.tasks.general.SolicitarOperacion;

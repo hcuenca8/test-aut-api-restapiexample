@@ -1,10 +1,7 @@
 package com.restapiexample.test.automation.api.models.dtos.data;
 
 import com.google.gson.annotations.SerializedName;
-import com.restapiexample.test.automation.api.models.params.javadoc.ParamsJavaDoc;
-import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 @Data
 public class DataEmpleado

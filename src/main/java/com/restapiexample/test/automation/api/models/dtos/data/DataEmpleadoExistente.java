@@ -1,7 +1,6 @@
 package com.restapiexample.test.automation.api.models.dtos.data;
 
 import com.google.gson.annotations.SerializedName;
-import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

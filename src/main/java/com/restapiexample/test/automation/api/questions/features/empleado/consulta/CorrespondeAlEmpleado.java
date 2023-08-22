@@ -2,7 +2,6 @@ package com.restapiexample.test.automation.api.questions.features.empleado.consu
 
 import com.restapiexample.test.automation.api.models.dtos.data.DataEmpleadoExistente;
 import com.restapiexample.test.automation.api.models.params.features.empleado.consultar.ConsultarEmpleadoParams;
-import com.restapiexample.test.automation.api.models.params.features.empleado.crear.CrearEmpleadoParams;
 import com.restapiexample.test.automation.api.questions.javadoc.QuestionsJavaDoc;
 import lombok.Builder;
 import net.serenitybdd.screenplay.Actor;

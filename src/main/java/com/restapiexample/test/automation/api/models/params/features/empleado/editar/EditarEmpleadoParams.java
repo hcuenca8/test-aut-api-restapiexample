@@ -1,7 +1,6 @@
 package com.restapiexample.test.automation.api.models.params.features.empleado.editar;
 
 import com.restapiexample.test.automation.api.models.dtos.data.DataEmpleado;
-import com.restapiexample.test.automation.api.models.dtos.requests.empleado.crear.CrearEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.editar.EditarEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.params.javadoc.ParamsJavaDoc;
 import lombok.Builder;

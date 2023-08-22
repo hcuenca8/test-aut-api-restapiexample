@@ -1,7 +1,6 @@
 package com.restapiexample.test.automation.api.constants.enums.tablasgherkin.general.api;
 
 import com.restapiexample.test.automation.api.constants.enums.tablasgherkin.javadoc.TblGherkinJavaDoc;
-import com.restapiexample.test.automation.api.models.params.features.empleado.retirar.RetirarEmpleadoParams;
 import com.restapiexample.test.automation.api.models.params.general.api.RespuestaPeticionParams;
 import com.restapiexample.test.automation.api.models.scena.screenplay.Protagonista;
 import com.restapiexample.test.automation.api.utils.gherkin.tabla.interfaces.ITablaGherkin;

@@ -1,6 +1,5 @@
 package com.restapiexample.test.automation.api.models.dtos.requests.general.interfaces;
 
-import com.restapiexample.test.automation.api.models.dtos.responses.empleado.retirar.RetirarEmpleadoResponse;
 import com.restapiexample.test.automation.api.models.dtos.responses.general.GeneralResponse;
 import com.restapiexample.test.automation.api.models.dtos.responses.general.interfaces.IResponse;
 

@@ -1,20 +1,13 @@
 package com.restapiexample.test.automation.api.tasks.features.empleado.editar;
 
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.editar.EditarEmpleadoRequest;
-import com.restapiexample.test.automation.api.models.dtos.requests.empleado.retirar.RetirarEmpleadoRequest;
-import com.restapiexample.test.automation.api.models.dtos.responses.empleado.crear.CrearEmpleadoResponse;
 import com.restapiexample.test.automation.api.models.dtos.responses.empleado.editar.EditarEmpleadoResponse;
-import com.restapiexample.test.automation.api.models.dtos.responses.empleado.retirar.RetirarEmpleadoResponse;
-import com.restapiexample.test.automation.api.models.dtos.responses.general.GeneralResponse;
 import com.restapiexample.test.automation.api.models.params.features.empleado.editar.EditarEmpleadoParams;
 import com.restapiexample.test.automation.api.tasks.general.SolicitarOperacion;
 import com.restapiexample.test.automation.api.tasks.javadoc.TasksJavaDoc;
 import com.restapiexample.test.automation.api.utils.json.JSONUtils;
-import com.restapiexample.test.automation.api.utils.service.request.PeticionUtil;
 import lombok.AllArgsConstructor;
-import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.rest.interactions.Put;
 

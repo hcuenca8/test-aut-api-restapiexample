@@ -1,7 +1,6 @@
 package com.restapiexample.test.automation.api.constants.enums.tablasgherkin.features.empleado.editar;
 
 import com.restapiexample.test.automation.api.constants.enums.tablasgherkin.javadoc.TblGherkinJavaDoc;
-import com.restapiexample.test.automation.api.models.dtos.requests.empleado.editar.EditarEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.params.features.empleado.editar.EditarEmpleadoParams;
 import com.restapiexample.test.automation.api.models.scena.screenplay.Protagonista;
 import com.restapiexample.test.automation.api.utils.gherkin.tabla.interfaces.ITablaGherkin;

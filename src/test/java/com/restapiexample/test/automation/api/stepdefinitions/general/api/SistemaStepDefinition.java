@@ -4,15 +4,11 @@ import com.restapiexample.test.automation.api.constants.enums.configuracion.sere
 import com.restapiexample.test.automation.api.interactions.Depurar;
 import com.restapiexample.test.automation.api.models.scena.Libreto;
 import com.restapiexample.test.automation.api.models.scena.screenplay.Protagonista;
-import com.restapiexample.test.automation.api.questions.PlantillaQuestion;
 import com.restapiexample.test.automation.api.questions.general.api.RespuestaAdecuada;
 import com.restapiexample.test.automation.api.stepdefinitions.javadoc.StepDefinitionsJavaDoc;
-import com.restapiexample.test.automation.api.tasks.PlantillaTask;
-import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
 import net.serenitybdd.screenplay.GivenWhenThen;
-import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.rest.abilities.CallAnApi;
 
 /**

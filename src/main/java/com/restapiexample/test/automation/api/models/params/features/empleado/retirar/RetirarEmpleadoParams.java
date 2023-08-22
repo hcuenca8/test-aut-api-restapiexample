@@ -1,6 +1,5 @@
 package com.restapiexample.test.automation.api.models.params.features.empleado.retirar;
 
-import com.restapiexample.test.automation.api.models.dtos.requests.empleado.consultar.ConsultarEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.dtos.requests.empleado.retirar.RetirarEmpleadoRequest;
 import com.restapiexample.test.automation.api.models.params.javadoc.ParamsJavaDoc;
 import lombok.Builder;
