@@ -9,6 +9,7 @@ pipeline {
           sh './gradlew clean test -Denvironment=pipeline'
         }
 
+        //https://qaautomation.expert/2023/01/13/how-to-create-jenkins-pipeline-for-serenity-tests/
         post {
           always {
             publishHTML([
