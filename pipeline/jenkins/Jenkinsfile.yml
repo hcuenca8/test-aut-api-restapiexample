@@ -8,6 +8,13 @@ pipeline {
         steps {
           sh './gradlew clean test --tests "com.restapiexample.test.automation.api.runners.features.empleado.consultar.TestConsultarEmpleadoRunner"'
         }
+        post {
+          // If Maven was able to run the tests, even if some of the test
+          // failed, record the test results and archive the jar file.
+          success {
+            publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: 'target/site/serenity/', reportFiles: 'index.html', reportName: 'Serenity Report', reportTitles: '', useWrapperFileDirectly: true])
+          }
+        }
       }
     }
 }
