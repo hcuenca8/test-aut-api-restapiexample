@@ -6,8 +6,9 @@ pipeline {
 
       stage ('test') {
         steps {
-          sh './gradlew clean test --tests "com.restapiexample.test.automation.api.runners.features.empleado.consultar.TestConsultarEmpleadoRunner"'
+          sh './gradlew clean test -Denvironment=pipeline'
         }
+
         post {
           // If Maven was able to run the tests, even if some of the test
           // failed, record the test results and archive the jar file.
